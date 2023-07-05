@@ -1,7 +1,7 @@
 :root {
     --main-text-color: #FFFFFF;
     --main-text-color-dr: #FFFFFF;
-    --main-text-color-hov: #FFFFFF;
+    --main-text-color-hov: #F4FBFF;
     --main-link-bgcolor: #FF007A;
     --main-font-familiy: "Nunito";
     --main-text-black-color: #211F25;
@@ -14,12 +14,13 @@
     --main-social-media-color: #F4F4F4;
     --main-text-color-bg: #FFFFFF;
     --main-color:#ffffff;
-}
+    --main-new-sahdow:#CDE3EF;
+    --main-text-hover:#FFF;
 
+}
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: var(--main-font-familiy);

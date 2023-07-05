@@ -1,9 +1,10 @@
 @import "../mixins";
 
-// .site-new {
-// }
-// .new {
-// }
+.new{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var( --main-text-color-hov);
+}
 
 .new__inner {
     display: flex;
@@ -53,9 +54,10 @@
 }
 
 .new__item:hover {
-    background: var(--main-text-color-hov);
+    background-color: var(--main-text-hover);
     border: 1px solid(--main-text-color-hov);
-    box-shadow: 0px 4px 14px #CDE3EF;
+    box-shadow: 0px 4px 14px var( --main-new-sahdow);
+    transition: background-color 0.5s ease;
 }
 
 .new__link-sp {
@@ -79,7 +81,7 @@
 }
 .new__item:hover .new__link-sp::after{
     background-image: url("/images/rightmax.svg");
-   
+
 }
 
 .new__img {
@@ -175,8 +177,23 @@ time {
 }
 
 @include media(1100px) {
+    .new{
+        padding: 120px 160px;
+    }
     .new__item {
         max-width: 405px;
         width: 100%;
     }
+    .new__link-box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .new__text-box{
+      display: block;
+
+    }
+
 }

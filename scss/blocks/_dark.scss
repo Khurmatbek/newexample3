@@ -1,8 +1,9 @@
 @import "../mixins";
 .dark{
 background-color: #000000;
---main-text-black-color:#fff;
 --main-text-color-dr:#000000;
+--main-text-black-color:#fff;
+--main-simple-text-color:#fff;
 --main-text-black-color-sec:#D6D6D6;
 --main-text-hover-color: #211F25;
 --main-text-black-color-sec1:#FF94C7;
@@ -14,6 +15,9 @@ background-color: #000000;
 --main-text-color-bg: #211F25;
 --main-link-bgcolor:var(--main-text-black-color-sec1);
 --main-color:#555555;
+--main-new-sahdow:transparent;
+--main-text-color-hov::#505050;
+--main-text-hover:#505050;
 }
 
 .dark .hero{

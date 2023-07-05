@@ -1,7 +1,9 @@
 @import "../mixins";
 
-.simple{
+.simple {
     margin-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .simple__inner {
     display: flex;
@@ -59,13 +61,14 @@
 .simple__item:hover {
     border: 1px solid var(--main-link-bgcolor);
     border-radius: 17px;
+    transition: 0.5s ease;
 }
 
 .simple__item:hover .simple__link-get {
     background-color: var(--main-link-bgcolor);
     color: var(--main-text-color-dr);
+    transition: 0.6s linear;
 }
-
 
 .simple__text-sec {
     margin: 0;
@@ -76,7 +79,7 @@
     line-height: 150%;
     text-align: center;
     letter-spacing: -0.01em;
-    color: var(--main-text-black-color)
+    color: var(--main-text-black-color);
 }
 
 .simple__money {
@@ -112,7 +115,6 @@
 
 .simple__item-sec:not(:last-child) {
     margin-bottom: 16px;
-
 }
 
 .simple__item-sec:not(:last-child):before {
@@ -123,7 +125,6 @@
     background-image: url("/images/true-monile.svg");
     background-size: cover;
     content: " ";
-
 }
 
 .simple__link {
@@ -145,38 +146,50 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color:var(--main-link-bgcolor);
+    color: var(--main-link-bgcolor);
     text-decoration: none;
     border: 1px solid var(--main-link-bgcolor);
     border-radius: 32px;
     text-align: center;
 }
-@include media(375px){
-    .simple__list{
+@include media(375px) {
+    .simple__list {
         width: 100%;
     }
-    .simple__item{
-        max-width:344px;
+    .simple__item {
+        max-width: 344px;
         width: 100%;
     }
 }
-@include media(900px){
-    .simple__list{
+@include media(900px) {
+    .simple__list {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content:center;
-    } 
-    .simple__item{
+        justify-content: center;
+        gap: 32px;
+    }
+    .simple__item {
         max-width: 405px;
         width: 100%;
-    }  
-    .simple__link-get{
+    }
+    .simple__link-get {
         max-width: 342px;
         width: 100%;
         margin: 0 auto;
     }
+    .simple__text-box {
+        max-width: 584px;
+        width: 100%;
+    }
+    .simple__title {
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: -0.48px;
+    }
 }
-
-
-
+@include media(1200px) {
+    .simple__item {
+        padding: 31px;
+    }
+}

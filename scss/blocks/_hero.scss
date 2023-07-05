@@ -1,6 +1,7 @@
 @import "../mixins";
 .needs {
     margin-top: 80px;
+    padding: 100px 0;
 }
 
 .needs__inner {
@@ -107,7 +108,7 @@
     color: var(--main-link-bgcolor);
 }
 @include media(375px) {
-    .needs__item{
+    .needs__item {
         padding: 16px 0;
     }
     .needs__top {
@@ -152,17 +153,40 @@
         line-height: 120%;
     }
 }
-@include media(900px){
-    .needs__top{
+@include media(900px) {
+    .needs__top {
         margin-bottom: 80px;
+    }
+    .needs__item:nth-child(1)
+    {
+        margin-bottom: 0;
+    }
+    .needs__item:nth-child(2)
+    {
+        margin-bottom: 0;
     }
 }
 @include media(1200px) {
     .needs__item {
         max-width: 405px;
         width: 100%;
+        padding: 24px;
+        margin-bottom:0;
+    }
+    .needs__item:nth-child(1)
+    {
+        margin-bottom: 0;
+    }
+    .needs__item:nth-child(2)
+    {
+        margin-bottom: 0;
     }
 
+
+    .needs__img {
+        width:357px ;
+        height: 270px;
+    }
     .needs__title {
         font-size: 32px;
         line-height: 120%;
