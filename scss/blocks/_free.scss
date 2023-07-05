@@ -1,0 +1,142 @@
+@import "../mixins";
+
+.site-free {
+    background: #6B50FF;
+    padding-top: 83px;
+    padding-bottom: 83px;
+}
+
+.free__inner {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.free__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: var(--main-font-familiy);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--main-text-color);
+}
+
+.free__desc {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: var(--main-font-familiy);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+form {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.free__email {
+    width: 200px;
+    margin-right: 10px;
+    padding: 9px 18px;
+    outline: none;
+    border-radius: 32px;
+    background-color: var(--main-text-color);
+    border: 1px solid transparent;
+
+}
+
+.free__email::placeholder {
+    font-family: var(--main-roboto-familiy);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505050;
+}
+.free__email:hover{
+border: 1px solid var(--main-link-bgcolor);
+}
+
+.free__btn {
+    width: 132px;
+    padding: 9px 10px;
+    font-family: var(--main-roboto-familiy);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+   
+    color: var(--main-link-bgcolor);
+    background-color: var(--main-text-color);
+    border-radius: 32px;
+    border: 1px solid var(--main-link-bgcolor);
+}
+
+.free__btn:hover {
+    background: var(--main-link-bgcolor);
+
+    color: var(--main-text-color-dr);
+
+}
+
+.free__desc-sec {
+    margin: 0;
+    font-family: var(--main-roboto-familiy);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.free__link-sec {
+    font-family: var(--main-roboto-familiy);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+
+// --main-text-color: #FFFFFF;
+// --main-link-bgcolor: #FF007A;
+// --main-font-familiy: "Nunito";
+// --main-text-black-color: #211F25;
+// --main-text-black-color-sec:#3D3A41;
+// --main-simple-text-color:#000000;
+// --main-roboto-familiy:"Roboto";
+@include media(375px) {
+    .free__email {
+        max-width: 242px;
+        width: 100%;
+    }
+    .free__task-box{
+        max-width: 341px;
+        width: 100%;
+    }
+}
+
+@include media (767px) {
+    .needs__last {
+        max-width: 700px;
+        width: 100%;
+    }
+    .free__forma{
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .free__task-box{
+        max-width: 513px;
+        width: 100%;
+    }
+
+}

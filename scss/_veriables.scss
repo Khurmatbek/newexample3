@@ -1,0 +1,26 @@
+:root {
+    --main-text-color: #FFFFFF;
+    --main-text-color-dr: #FFFFFF;
+    --main-text-color-hov: #FFFFFF;
+    --main-link-bgcolor: #FF007A;
+    --main-font-familiy: "Nunito";
+    --main-text-black-color: #211F25;
+    --main-text-black-color-sec1: #211F25;
+    --main-text-black-color-sec: #3D3A41;
+    --main-simple-text-color: #000000;
+    --main-text-hover-color: #F7F5FF;
+    --main-roboto-familiy: "Roboto";
+    --main-advance-item-hover-color: #FCFBFF;
+    --main-social-media-color: #F4F4F4;
+    --main-text-color-bg: #FFFFFF;
+    --main-color:#ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font-familiy);
+}

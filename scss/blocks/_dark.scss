@@ -1,0 +1,38 @@
+@import "../mixins";
+.dark{
+background-color: #000000;
+--main-text-black-color:#fff;
+--main-text-color-dr:#000000;
+--main-text-black-color-sec:#D6D6D6;
+--main-text-hover-color: #211F25;
+--main-text-black-color-sec1:#FF94C7;
+--main-text-hover-color:#211F25;
+--main-advance-item-hover-color:#211F25;
+--main-text-hover-color:#211F25;    
+--main-text-color-hov:#211F25;
+--main-social-media-color: #555555;
+--main-text-color-bg: #211F25;
+--main-link-bgcolor:var(--main-text-black-color-sec1);
+--main-color:#555555;
+}
+
+.dark .hero{
+    background-image: url("/images/mobiledark.png");
+    background-size: 100% 820px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+@include media (767px) {
+    .dark .hero{
+        background-image: url("/images/desktopdark.png");
+        background-size: 100% 891px;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}
+.dark .simple__get-link:hover{
+    color:#000000;
+}
+.dark  .free{
+    background:linear-gradient(72.67deg, #1A1822 2.78%, #9040E3 173.27%), #6B50FF;
+}
