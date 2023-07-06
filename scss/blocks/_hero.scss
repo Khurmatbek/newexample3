@@ -62,6 +62,7 @@
 
 .needs__item:hover {
     background-color: var(--main-text-hover-color);
+    border-radius: 8px;
 }
 
 .needs__img {
@@ -155,7 +156,7 @@
 }
 @include media(900px) {
     .needs {
-  padding: 0 20px;
+  padding: 100px 20px;
     }
     .needs__top {
         margin-bottom: 80px;
@@ -192,7 +193,7 @@
 }
 @include media(1440px){
     .needs{
-        padding: 0 40px;
+        padding: 100px 40px;
     }
 }
 @include media(1600px){
