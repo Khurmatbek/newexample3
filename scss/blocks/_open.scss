@@ -1,0 +1,87 @@
+@import "../mixins";
+.open {
+    position: fixed;
+}
+.open .hero {
+    width: 100vw;
+    height: 100vh;
+}
+.open .hero__header-btn-dark {
+    display: none;
+}
+.open .hero__header-btn {
+    background-image: url("/icons/circle-not.svg");
+}
+.open .hero__menu-nav {
+    display: block;
+}
+.open .hero {
+    background-color: var(--main-menu-color);
+    background-image: none;
+}
+.open .hero__text-box {
+    display: none;
+}
+.open .hero__img {
+    display: none;
+}
+.open .hero__menu-for {
+    display: block;
+}
+.open .hero__menu-for-navlist {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+}
+.open .hero__menu-for-navlink {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    text-decoration: none;
+}
+.dark .open .hero {
+    background-color: var(--main-menu-color);
+}
+
+@include media(767px) {
+    .open {
+        position: static;
+    }
+    .open .hero {
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/desktopbbg.png");
+        background-color: transparent;
+        background-size: 100% 750px;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .open .hero__header-btn-dark {
+        display: block;
+    }
+    .open .hero__header-btn {
+        display: none;
+    }
+    .open .hero__menu-for {
+        display: none;
+    }
+    .open .hero {
+        background-image: url("/images/desktopbbg.png");
+        background-size: 100% 750px;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    .open .hero__text-box {
+        display: flex;
+    }
+    .open .hero__img {
+        display: block;
+    }
+}

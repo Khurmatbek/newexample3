@@ -1,5 +1,7 @@
 @use "container";
 @use "header";
+@use "dark";
+@use "./open";
 @use "hero";
 @use "advence";
 @use "customer";
@@ -7,4 +9,3 @@
 @use "free";
 @use "new";
 @use "footer";
-@use "dark";
