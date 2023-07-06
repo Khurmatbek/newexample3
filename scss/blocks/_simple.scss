@@ -173,6 +173,9 @@
         max-width: 405px;
         width: 100%;
     }
+    .simple__item-sec:nth-child(5){
+        margin-bottom: 39px;
+    }
     .simple__link-get {
         max-width: 342px;
         width: 100%;
@@ -186,10 +189,15 @@
         font-size: 48px;
         line-height: 120%;
         letter-spacing: -0.48px;
+
+        .simple__link-get {
+            padding: 16px 28px;
+        }
     }
 }
-@include media(1200px) {
-    .simple__item {
-        padding: 31px;
+    @include media(1200px) {
+        .simple__item {
+            padding: 31px;
+        }
     }
-}
+
