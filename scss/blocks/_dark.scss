@@ -25,6 +25,7 @@ background-color: #000000;
 --main-new-item:#555555;
 --main-social-media-color1:#211F25;
 --main-new-sahdow:transparent;
+--main-footer-color:#000;
 }
 
 .dark .hero{
@@ -62,6 +63,8 @@ background-color: #000000;
     top: calc(50% - 6px);
     left:calc(50% - -65px);
 }
-.dark .new__link-sec:hover{
+.dark
+.new__item:hover
+ .new__link-sec{
 background-color: #211F25;;
 }
