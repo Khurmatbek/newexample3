@@ -67,8 +67,9 @@ border: 1px solid var(--main-link-bgcolor);
 }
 
 .free__btn {
+    display: inline-block;
     width: 132px;
-    padding: 9px 10px;
+    padding: 8px 16px;
     font-family: var(--main-roboto-familiy);
     font-weight: 400;
     font-size: 16px;

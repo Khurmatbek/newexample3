@@ -19,6 +19,12 @@ background-color: #000000;
 --main-text-color-hov::#505050;
 --main-text-hover:#505050;
 --main-menu-color:#1A1823;
+--main-corusel-color:#211F25;
+--main-text-hover-color1:#555555;
+--main-text-black-color-sec2:#fff;
+--main-new-item:#555555;
+--main-social-media-color1:#211F25;
+--main-new-sahdow:transparent;
 }
 
 .dark .hero{
@@ -44,4 +50,18 @@ background-color: #000000;
 }
 .dark .hero__header-btn-dark {
     transform: none;
+}
+.dark .new__link-sp::after {
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    background-image: url("/images/rightmax.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: " ";
+    top: calc(50% - 6px);
+    left:calc(50% - -65px);
+}
+.dark .new__link-sec:hover{
+background-color: #211F25;;
 }
