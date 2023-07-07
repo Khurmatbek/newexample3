@@ -1,0 +1,60 @@
+@import "../mixins";
+.slick-prev{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    position:absolute;
+    z-index: 2;
+    background:transparent;
+    background-image: url("/icons/Button.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: calc(50% - 41px);
+    left:0;
+    border: none;
+    transform: rotate(180deg);
+}   
+.slick-prev:hover{
+    background-color: #FF007A;
+    background-image: url("/icons/Icon.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 180deg;
+
+}
+.slick-next{
+    position:absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    z-index: 2;
+    background:transparent; 
+    top: calc(50% - 41px);
+    right:0;
+    background-image: url("/icons/Button.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+
+    
+}
+.slick-next:hover{
+    background-color: #FF007A;
+    background-image: url("/icons/Icon.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    
+}
+@include media(1600px){
+    .slick-prev{
+        left:calc(50% - 571px);
+    }
+    .slick-next{
+        left:calc(50% + 571px);
+    }
+}

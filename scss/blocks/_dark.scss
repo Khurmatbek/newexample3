@@ -27,6 +27,7 @@ background-color: #000000;
     background-position: center top;
     background-repeat: no-repeat;
 }
+
 @include media (767px) {
     .dark .hero{
         background-image: url("/images/desktopdark.png");

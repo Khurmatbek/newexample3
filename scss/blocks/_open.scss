@@ -24,7 +24,7 @@
 }
 .open .hero__img {
     display: none;
-}
+}   
 .open .hero__menu-for {
     display: block;
 }
@@ -53,6 +53,7 @@
     .open {
         position: static;
     }
+
     .open .hero {
         width: 100%;
         height: 100%;
@@ -62,7 +63,7 @@
         background-position: center top;
         background-repeat: no-repeat;
     }
-
+    
     .open .hero__header-btn-dark {
         display: block;
     }
@@ -72,12 +73,12 @@
     .open .hero__menu-for {
         display: none;
     }
-    .open .hero {
-        background-image: url("/images/desktopbbg.png");
-        background-size: 100% 750px;
-        background-position: center top;
-        background-repeat: no-repeat;
-    }
+        .dark .hero{
+            background-image: url("/images/desktopdark.png");
+            background-size: 100% 891px;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
     .open .hero__text-box {
         display: flex;
     }
